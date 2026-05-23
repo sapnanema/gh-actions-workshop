@@ -13,6 +13,7 @@ jobs:
       run: |
           echo "Hello $MY_ENV"
           echo "Hello $GITHUB_ACTOR" 
+          echo "Config variable: ${{vars.PROJECTID}}"
      # List all files in the current directory for comparison before and after actions/checkout@v5.
     -  run: ls -l
     - uses: actions/checkout@v5
