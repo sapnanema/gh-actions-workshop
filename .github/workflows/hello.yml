@@ -18,6 +18,7 @@ jobs:
           echo "secret : ${{secrets.GITHUB_TOKEN}}"
           echo "secret : ${{secrets.SONAR_TOKEN}}"
           echo "ref: ${{github.ref_name}}"
+          echo "$GITHUB_OUTPUT"
      # List all files in the current directory for comparison before and after actions/checkout@v5.
     -  run: ls -l
     - uses: actions/checkout@v5
